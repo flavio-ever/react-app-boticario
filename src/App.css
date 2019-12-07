@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  font-size: 14px;
+  color: #3a444a;
+}
+
+body {
+  background: #8dcb78 url("./assets/bg_blur.jpg") no-repeat;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased !important;
+  position: relative;
+}
+
+img {
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+
+body::before {
+  content: "";
+  background: rgba(91, 174, 50, 0.267);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body,
+input,
+button {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LOGIN */
+
+.Login {
+  width: 30vw;
+  position: relative;
+}
+
+.Login #logoTipo {
+  margin-bottom: 20px;
+}
+
+.Login__content {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 35px 20px;
+  display: flex;
+  flex-direction: column;
+
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.28);
+}
+
+.Login__content p {
+  line-height: 10px;
+  margin-bottom: 20px;
+}
+
+.Login__content form label {
+  display: inline-block;
+  font-size: 14px;
+  color: #3a444a;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.Login__content form input {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.Login__content button.Login__btn {
+  border-radius: 5px;
+  height: 3rem;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #8dcb78;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Login__content button.btn:hover {
+  background-color: #8dcb78;
+}
+
+.Login__content a {
+  color: #8dcb78;
+  text-decoration: none;
+}
+
+.Login__saudacao {
+  font-size: 20px;
+}
+
+/** REVENDEDOR **/
+
+.Revendedor {
+  position: relative;
+  min-width: 65vw;
+}
+
+.Revendedor header {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+ul.Revendedor__opcoes li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 1.5rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+ul.Revendedor__opcoes li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Revendedor__pontuacao,
+ul.Revendedor__opcoes {
+  margin-bottom: 1rem;
+}
+
+.Revendedor__pontuacao h3 {
+  color: #fff;
+}
+
+.Revendedor__pontuacao h1 {
+  color: #fff;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.Revendedor_logotipo {
+  width: 250px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: -60px;
+}
+
+.Revendedor__content {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  padding: 35px 20px;
+  border-top: 10px solid #8dcb78;
+  display: flex;
+  flex-wrap: wrap;
+
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.28);
+
+  -moz-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.28);
+}
+
+table,
+tr,
+td {
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 1rem;
+  width: 100%;
+  flex: 1;
+}
+
+thead {
+  color: #8dcb78;
+  font-size: 15px;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:last-child {
+  border: 0;
+}
+
+.Revendedor table a {
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 10px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  width: 80px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.Revendedor table button:first-child {
+  margin-left: 0;
+}
+
+.Revendedor table button:last-child {
+  margin-right: 0;
+}
+
+.Revendedor table a.editar {
+  background-color: #ddd;
+  color: #3a444a;
+}
+
+.Revendedor table a.remover {
+  background-color: #ddd;
+  color: #3a444a;
+}
+
+.Revendedor table span.status {
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: block;
+  text-align: center;
+}
+
+.Revendedor table span.aprovado {
+  background-color: #8dcb78;
+}
+
+.Revendedor table span.reprovado {
+  background-color: #ff4c2d;
+}
+
+.Revendedor table span.validacao {
+  background-color: #ffcc00;
+}
+
+/* Componente Cadastro */
+
+.Cadastro {
+  width: 100%;
+}
+
+.Cadastro__inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  margin-bottom: 2rem;
+}
+
+.Cadastro__submit {
+}
+
+button.Cadastro__btn {
+  border-radius: 5px;
+  height: 3rem;
+  width: 10rem;
+  padding: 0 20px;
+  font-size: 16px;
+  background-color: #8dcb78;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.Cadastro__wrap {
+  margin-top: 1rem;
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.Cadastro form label {
+  display: inline-block;
+  font-size: 14px;
+  color: #3a444a;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.Cadastro form input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.Desenvolvedor {
+  margin: 0 auto;
+}
+
+.Desenvolvedor ul {
+
+}
+
+.Desenvolvedor li {
+  display: block;
+  line-height: 2rem;
+}
+
+.Desenvolvedor li a {
+  text-decoration: none;
+  color: #8dcb78;
+}
+
+.Desenvolvedor h3 {
+  margin-top: 1.5rem;
+  line-height: 2.3rem;
+}
