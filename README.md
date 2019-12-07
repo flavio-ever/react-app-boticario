@@ -46,7 +46,7 @@
 
 #### Revendedor (Listar Produtos)
 
-[![](screens/area_login.png)](screens/area_produtos.png)
+[![](screens/area_produtos.png)](screens/area_produtos.png)
 
 #### Cadastro de Produtos
 
