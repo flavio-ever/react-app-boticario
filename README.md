@@ -13,18 +13,18 @@ O projeto Front-end foi desenvolvido em ReactJS, faz consulta na API da Boticari
 
 ## Task List
 
-- [x] Login;
-	- [x] Informar e-mail e senha;;
-- [x] SignIn;
+- [x] Login
+	- [x] Informar e-mail e senha;
+- [x] SignIn
 	- [x] Nome completo, CPF, e-mail e senha;
-- [x] Revendedor;
+- [x] Revendedor
 	- [x] Exibir o valor de cashback acumulado até o momento, esta informação virá de uma APIs do boticário;
-	- [x] Listar Produtos com código da compra, valor, data, % de cashback aplicado, valor do cashback e status do cadastro
+	- [x] Listar Produtos com código da compra, valor, data, % de cashback aplicado, valor do cashback e status do cadastro;
 	- [x] O status do cadastro poderá ser “Em validação”, “Reprovado” e “Aprovado;
 	- [x] Opção para editar e excluir uma compra caso ele esteja "Em Validação";
-- [x] Cadastro;
-	- [x] Deverá ser informado o código, valor e data (% de cashback e Status são Randômicos);
-- [x] Desenvolvedor;
+- [x] Cadastro
+	- [x] Deverá ser informado o código, valor e data _(A % de CashBack e Status são Randômicos)_;
+- [x] Desenvolvedor
  	- [x] Nesta tela terá nome, e-mail e outros dados do desenvolvedor;
 
 ## Application
