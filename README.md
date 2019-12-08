@@ -26,6 +26,7 @@ O projeto Front-end foi desenvolvido em ReactJS, faz consulta na API da Boticari
 	- [x] Deverá ser informado o código, valor e data _(A % de CashBack e Status são Randômicos)_;
 - [x] Desenvolvedor
  	- [x] Nesta tela terá nome, e-mail e outros dados do desenvolvedor;
+- [x] Sair
 
 ## Application
 
