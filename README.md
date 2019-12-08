@@ -1,3 +1,6 @@
+## Description
+O projeto Front-end foi desenvolvido em ReactJS, faz consulta na API da Boticario para obter pontuação randômica conforme o CPF. Por ausência de Backend, decidi registrar todo o DATA da jornada do Revendedor via localStorage, aplicando desestruturação e outras técnicas para manipulação do Objeto JSON. Toda a estilização foi feita na __unha__, tentando abstrair ao máximo o os elementos e suas respectivas características através do padrão CSS __BEM__ na escrita e nomeclatura de Classes.
+
 ## Features
 - Tela de cadastro de um novo revendedor(a) solicitando Nome completo, CPF, e-mail e senha;
 - Tela de login para informar e-mail e senha;
@@ -10,18 +13,18 @@
 
 ## Task List
 
-- [x] Login;
-	- [x] Informar e-mail e senha;;
-- [x] SignIn;
+- [x] Login
+	- [x] Informar e-mail e senha;
+- [x] SignIn
 	- [x] Nome completo, CPF, e-mail e senha;
-- [x] Revendedor;
+- [x] Revendedor
 	- [x] Exibir o valor de cashback acumulado até o momento, esta informação virá de uma APIs do boticário;
-	- [x] Listar Produtos com código da compra, valor, data, % de cashback aplicado, valor do cashback e status do cadastro
+	- [x] Listar Produtos com código da compra, valor, data, % de cashback aplicado, valor do cashback e status do cadastro;
 	- [x] O status do cadastro poderá ser “Em validação”, “Reprovado” e “Aprovado;
 	- [x] Opção para editar e excluir uma compra caso ele esteja "Em Validação";
-- [x] Cadastro;
-	- [x] Deverá ser informado o código, valor e data;
-- [x] Desenvolvedor;
+- [x] Cadastro
+	- [x] Deverá ser informado o código, valor e data _(A % de CashBack e Status são Randômicos)_;
+- [x] Desenvolvedor
  	- [x] Nesta tela terá nome, e-mail e outros dados do desenvolvedor;
 
 ## Application
@@ -44,6 +47,10 @@
 
 [![](screens/area_login.png)](screens/area_login.png)
 
+#### SignIn
+
+[![](screens/area_signin.png)](screens/area_signin.png)
+
 #### Revendedor (Listar Produtos)
 
 [![](screens/area_produtos.png)](screens/area_produtos.png)
@@ -51,3 +58,7 @@
 #### Cadastro de Produtos
 
 [![](screens/area_cadastro.png)](screens/area_cadastro.png)
+
+#### Desenvolvedor
+
+[![](screens/area_desenvolvedor.png)](screens/area_desenvolvedor.png)
