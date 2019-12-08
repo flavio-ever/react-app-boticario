@@ -1,7 +1,12 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 class Header extends Component {
+  removeToken = () => {
+    localStorage.removeItem("token");
+    this.props.history.push("/");
+  }
+
   render() {
     return (
       <header>
@@ -15,6 +20,9 @@ class Header extends Component {
           <li>
             <Link to="/admin/desenvolvedor">Desenvolvedor</Link>
           </li>
+          <li>
+            <a onClick={this.removeToken }>Sair</a>
+          </li>
         </ul>
 
         <div className="Revendedor__pontuacao">
@@ -26,4 +34,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default withRouter(Header);

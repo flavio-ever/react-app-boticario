@@ -13,6 +13,11 @@ export default class Revendedor extends Component {
     credit: 0
   };
 
+  componentWillMount() {
+    // Sessão
+    !(localStorage.getItem('token')) && this.props.history.push('/');
+  }
+
   componentDidMount() {
     const token = localStorage.getItem("token");
     const { cpf } = JSON.parse(localStorage.getItem(token));
@@ -21,8 +26,6 @@ export default class Revendedor extends Component {
       const { credit } = res.data.body;
       this.setState({ credit });
     });
-    // Sessão
-    // !(this.props.location.state) && this.props.history.push('/');
   }
 
   render() {
