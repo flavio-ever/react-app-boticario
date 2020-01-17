@@ -1,5 +1,5 @@
 ## Description
-O projeto Front-end foi desenvolvido em ReactJS, faz consulta na API da Boticario para obter pontuação randômica conforme o CPF. Por ausência de Backend, decidi registrar todo o DATA da jornada do Revendedor via localStorage, aplicando desestruturação e outras técnicas para manipulação do Objeto JSON. Toda a estilização foi feita na __unha__, tentando abstrair ao máximo o os elementos e suas respectivas características através do padrão CSS __BEM__ na escrita e nomeclatura de Classes.
+O projeto Front-end foi desenvolvido em ReactJS sem o uso do CLI, trabalhando na configuração do Zero desde o Webpack até o Babel. O app faz consulta na API da Boticario para obter pontuação randômica conforme o CPF. Por ausência de Backend, decidi registrar todo o DATA da jornada do Revendedor via localStorage, aplicando desestruturação e outras técnicas para manipulação do Objeto JSON. Toda a estilização foi feita na __unha__, tentando abstrair ao máximo o os elementos e suas respectivas características através do padrão CSS __BEM__ na escrita e nomeclatura de Classes.
 
 ## Features
 - Tela de cadastro de um novo revendedor(a) solicitando Nome completo, CPF, e-mail e senha;
